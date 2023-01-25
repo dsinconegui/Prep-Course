@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { convertToRecursiveGlob } = require("@11ty/eleventy/src/TemplatePath")
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -131,7 +133,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if (numero % 3 == 0 && numero % 5 == 0) {
-    return 'fizzBuzz'
+    return 'fizzbuzz'
 } else if (numero % 3 == 0) {
 return 'fizz'
 } else if (numero % 5 == 0) {
@@ -148,20 +150,19 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  function operadoresLogicos (num1, num2, num3) {
+
+  
     if (num1 > num2 && num1 > num3 && num1 > 0) {
-        return 'Numero 1 es mayor y positivo'
-    } else if (num1 < 0 || num2 < 0 || num3 < 0) {
-        return 'Hay negativos'
-    } else if (num3 > num1 && num3 > num2) {
-        return num3++ 
-    } else if (num1 == 0 || num2 == 0 || num3 == 0) {
-        return 'error'
-    } else {
-        return false
+        console.log ('Número 1 es mayor y positivo')
+    } if (num1 < 0 || num2 < 0 || num3 < 0) {
+        console.log ('Hay negativos')
+    } if (num3 > num1 && num3 > num2) {
+        console.log (++num3) 
+    } if (num1 === 0 || num2 === 0 || num3 === 0) {
+        console.log ('error')
+    } else if (!true)
+        console.log (false)
     }
-}
-}
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -169,7 +170,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-for (var i = numero; numero < n; numero ++) {
+for (var i = numero; i < 100; i ++) {
   if (i % i == 0 && i & 1 == 0) {
     console.log (true)
   } 
@@ -195,7 +196,14 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   
-}
+    for (var i = 6; i > 60; i++) {
+      if (i % 6 === 0)
+      console.log (i)
+    }
+    if ( i >60) {
+      return
+    }
+    }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
