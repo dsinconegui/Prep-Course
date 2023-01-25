@@ -151,18 +151,18 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
-  
-    if (num1 > num2 && num1 > num3 && num1 > 0) {
-        console.log ('Número 1 es mayor y positivo')
-    } if (num1 < 0 || num2 < 0 || num3 < 0) {
-        console.log ('Hay negativos')
-    } if (num3 > num1 && num3 > num2) {
-        console.log (++num3) 
-    } if (num1 === 0 || num2 === 0 || num3 === 0) {
-        console.log ('error')
-    } else if (!true)
-        console.log (false)
-    }
+  if (num1 > num2 && num1 > num3 && num1 > 0) {
+    return ('Número 1 es mayor y positivo')
+} if (num1 < 0 || num2 < 0 || num3 < 0) {
+    return ('Hay negativos')
+} if (num3 > num1 && num3 > num2) {
+    return (num3 + 1) 
+} if (num1 === 0 || num2 === 0 || num3 === 0) {
+    return ('error')
+} 
+return false
+}
+
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -170,23 +170,25 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-for (var i = numero; i < 100; i ++) {
-  if (i % i == 0 && i & 1 == 0) {
-    console.log (true)
-  } 
-  if (!true) {
+  if (numero <=1) {
     return false
   }
-}
-}
+  for (var i = 2; i < numero; i ++) {
+    if (numero % i === 0) {
+      return false
+    } 
+    }
+    return true
+  }
+  
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if (valor == 'true') {
+  if (valor === true) {
     return 'Soy verdadero' 
-} else if (valor == 'false') {
+} else if (valor === false) {
     return 'Soy falso'
 }
 }
@@ -208,7 +210,12 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  let nuevonumero = numero.toString()
+  if (nuevonumero.length === 3) {
+      return true
+  } else {
+      return false
+  }
 }
 
 function doWhile(numero) {
