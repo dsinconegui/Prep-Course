@@ -199,9 +199,20 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   
 
+
     return  (array =  [0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]
       )
       }
+
+
+  for (var i=0 ; i <= 10; i++) {
+    multiplicacion = 6 * i;  
+console.log (multiplicacion) 
+  if (i > 10) {
+      break;
+  }
+}
+
 
 
 function tieneTresDigitos(numero){
