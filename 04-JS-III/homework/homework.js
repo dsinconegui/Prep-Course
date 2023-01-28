@@ -1,20 +1,26 @@
 // No cambies los nombres de las funciones.
 
+const { arrayReplaceAt } = require("markdown-it/lib/common/utils");
+
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-}
+ return array [0]
+ }
+
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+return array.pop()
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+return array.length
 }
 
 
@@ -23,6 +29,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+
 }
 
 
@@ -30,7 +37,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+array.push (elemento) 
+  return array
 }
+
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -47,7 +57,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-}
+  
+    var palabras = []
+    palabras [0] = 'Hello'
+    palabras [1] = 'World!'
+    string = array [0] + array [1]
+    return string
+  }
 
 
 function arrayContiene(array, elemento) {
