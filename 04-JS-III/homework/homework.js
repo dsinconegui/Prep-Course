@@ -29,7 +29,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-
+  function incrementarPorUno(array) {
+array = [1]
+for (var array = [1]; array < 100; array +1)
+return
+}
 }
 
 
@@ -48,6 +52,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+array.unshift (elemento)
+return array
 }
 
 
@@ -70,13 +76,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+var incluyeelemento = array.includes (elemento)
+return (incluyeelemento)
 }
-
-
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
 }
 
 
@@ -91,6 +98,7 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+
 }
 
 
