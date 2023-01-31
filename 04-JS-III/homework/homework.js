@@ -29,11 +29,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  function incrementarPorUno(array) {
-array = [1]
-for (var array = [1]; array < 100; array +1)
-return
-}
+
+ masUno = array.map (num => {return num +1}) 
+  return masUno
 }
 
 
@@ -64,11 +62,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   
-    var palabras = []
-    palabras [0] = 'Hello'
-    palabras [1] = 'World!'
-    string = array [0] + array [1]
-    return string
+   return palabras.join (' ') 
   }
 
 
@@ -83,7 +77,8 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-
+  for (var i = [0]; i <= numeros.length; i++)
+  console.log (i + 1) 
 }
 
 
